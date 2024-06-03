@@ -1,0 +1,110 @@
+
+/* Pixel Perfect Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%; /* Устранение масштабирования текста в iOS */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+
+/* Отмена стилей списков */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Отмена стилей ссылок */
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  padding: 0;
+  margin: 0;
+}
+
+/* Убрать стили для input, textarea и button */
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  appearance: none;
+  resize: none;
+}
+
+/* Убрать стандартные отступы для списков */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/* Убрать стандартные отступы для заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Убрать стандартные отступы для абзацев */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Убрать стандартные отступы для кнопок */
+button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Убрать стандартные отступы для изображений */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+  display: flex;
+}
